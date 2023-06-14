@@ -36,6 +36,7 @@
 					<ul class="icons">
 						<li><a href="https://www.linkedin.com/in/mojzis-masar-8a52b5109/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 						<li><a href="https://gitlab.fhnw.ch/mojzis.masar" class="icon brands fa-gitlab"><span class="label">GitLab</span></a></li>
+							<li><a href="https://github.com/J-Mojzis" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						<li><a href="https://www.instagram.com/mojzismasar/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="mailto:mojzismasar@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
@@ -90,24 +91,40 @@
 										<br />Explore My Work, <br />Dive into My World.</p>
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<a href="videos/Demo%20_MEWO.mp4" target="_blank">
+												<img src="images/MEWO.jpg" alt="" class="image" />
+											</a>
 											<div class="inner">
-												<h4>Possibly broke spacetime</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>Student Registration Plattform</h4>
+												<p>This project aims to create a secure web-based platform for student registrations that reduces media breaks, manual data entry errors, and process time, while also providing an easy-to-use interface for both users and administrators.</p>
 											</div>
+											<script>
+												document.addEventListener('DOMContentLoaded', function() {
+													var video = document.createElement('video');
+													video.style.display = 'none';
+													video.controls = true;
+													video.innerHTML = '<source src="videos/Demo%20_MEWO.mp4" type="video/mp4">';
+													var a = document.querySelector('article a');
+													a.addEventListener('click', function(event) {
+														event.preventDefault();
+														window.open(this.href, '_blank');
+														video.play();
+													});
+													document.body.appendChild(video);
+												});
+											</script>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<a href="projects/GradientDescent" download>
+												<img src="images/Descent.jpg" alt="" class="image" />
+											</a>
 											<div class="inner">
-												<h4>Terraformed a small moon</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Snapped dark matter in the wild</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>Numerical Approximation with Gradient Descent</h4>
+												<p>The objective of this project is to cultivate a fundamental
+													comprehension of numerical approximation techniques in higher
+													dimensions, with a specific emphasis on Gradient Descent and its
+													practical implementation. The project involves utilizing the
+													MNIST-dataset to recognize handwritten numbers.</p>
 											</div>
 										</article>
 									</div>
